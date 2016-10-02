@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TinyURL</title>
+
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
+    <script src = "../public/js/app.js"></script>
+    <script src = "/public/js/controllers/homeController.js"></script>
+    <script src = "/public/js/controllers/urlController.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body ng-app = "tinyurlApp"><!--I want the whole page to be controled by angularJS-->
+    <header>
+        <div class = "container"><!--we will use a lot of div to control, this is the alpha-->
+            <nav class = "navbar navbar-default">
+                <div class = "navbar-header">
+                    <a class = "navbar-brand" href = "localhost:3000/">TinyURL</a><!--we wanna use this to redirect to homepage-->
+                </div>
+            </nav>
+        </div>
+    </header><!--we wanna use this in all the html documents, the better way to use angularJS,-->
+
+    <div class = "container"><!--logic--><!--we wanna put in different contents but keep header the same, looks like one page-->
+        <div ng-view>
+
+        </div>
+    </div>
+</body>
+</html>
